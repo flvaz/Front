@@ -6,6 +6,8 @@
   font-family: "Roboto", sans-serif;
 }
 
+/* LOGIN TELA */
+
 #bg {
   background: url("../img/login_pet.png");
   background-position: center;
@@ -117,22 +119,125 @@ p {
   text-align: center;
 }
 
-a {
-  color: #bb6038;
-  font-size: 16px;
-  text-decoration: none;
-  transition: all 0.5s ease-out;
-}
-
-a:hover {
-  color: #ffc6c7;
-}
-
 .log h2{
   font-size: 3em;
   font-family: 'Bree Serif', serif;
   color: #fff;
   margin-bottom: .1em;  
+}
+
+/* CADASTRO TELA */
+
+body{
+  background-color: #3237d2;
+}
+
+#bg-cad {
+  background: url("../img/cadastro_pet-azul.png");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+  align-items: center;
+}
+
+.card-cad {
+  background-color: #3237d280;
+  padding: 30px;
+  border-radius: 4%;
+  box-shadow: 3px 3px 1px 0px #000000;
+  width: 400px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.label-cad input {
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  background-color: transparent;
+  outline: none;
+  min-width: 260px;
+  font-size: 16px;
+  transition: all 0.3s ease-out;
+  border-radius: 0;
+}
+
+.label-cad {
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-cad input:focus {
+  border-bottom: 2px solid #3237d2;
+}
+
+.label-cad input {
+  color: #fff;
+}
+
+.label-cad label {
+  color: #fff;  
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all 0.3s ease-out;
+}
+
+.label-cad input:focus+label {
+  font-size: 13px;
+  margin-top: 0px;
+  color: #3237d2;
+}
+
+.btn-cad {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.6s ease-out;
+}
+
+.btn-cad:hover {
+  background-color: #3237d2;
+  transition: all 0.5s ease-out;
+}
+
+.log-cad h2{
+  font-size: 3em;
+  font-family: 'Bree Serif', serif;
+  color: #fff;
+  margin-bottom: .1em; 
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+
 }
 
 .container .card{
@@ -151,6 +256,17 @@ a:hover {
     align-items: center;
     justify-content: center;    
   }
+
+  #bg-cad {
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+  }
+
 }
 
 /* TABLET */
@@ -164,8 +280,24 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;     
-  } 
+  }
+  
+  #bg-cad {
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+  }
+  
   .card{
+    margin-bottom: 5%;
+    
+  }
+
+  .card-cad{
     margin-bottom: 5%;
     
   }

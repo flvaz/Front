@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Screen Pet</title>
+    <title>Cadastrar</title>
     <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,40 +15,40 @@
         rel="stylesheet">
 </head>
 
-<header id="bg">
+<header id="bg-cad">
 
     <body>
-        <div class='container'>
-            <div class='card'>
-                <div class="log">
+        <div class='container-cad'>
+            <div class='card-cad'>
+                <div class="log-cad">
                     <h2>Pet em Casa</h2>
                 </div>
-                <h1>Entrar</h1>
+                <h1>Cadastrar</h1>
 
-                <div class='label-float'>
+                <div class='label-cad'>
+                    <input type='text' id='nome' paceholder=''>
+                    <label for='nome'>Nome</label>
+                </div>
+
+                <div class='label-cad'>
                     <input type='text' id='usuario' paceholder=''>
                     <label for='usuario'>Usuario</label>
                 </div>
 
-                <div class='label-float'>
+                <div class='label-cad'>
                     <input type='password' id='senha' paceholder=''>
                     <label for='senha'>Senha</label>
                 </div>
 
-                <div class='justify-center'>
-                    <button>Entrar</button>
+                <div class='label-cad'>
+                    <input type='password' id='confirmsenha' paceholder=''>
+                    <label for='confirmsenha'>Confirma Senha</label>
                 </div>
 
                 <div class='justify-center'>
-                    <hr>
+                    <button class="btn-cad">Cadastrar</button>
                 </div>
-
-                <p>Não tem uma conta?
-                    <a href=''>Cadastre-se</a>
-                </p>
-
             </div>
-
         </div>
     </body>
 </header>
