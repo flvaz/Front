@@ -8,6 +8,8 @@
     <title>Login Screen Pet</title>
     <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -26,13 +28,15 @@
                 <h1>Entrar</h1>
 
                 <div class='label-float'>
-                    <input type='text' id='usuario' paceholder=''>
+                    <input type='text' id='usuario' paceholder='' required>
                     <label for='usuario'>Usuario</label>
                 </div>
 
                 <div class='label-float'>
-                    <input type='password' id='senha' paceholder=''>
+                    <input type='password' id='senha' paceholder='' required>
                     <label for='senha'>Senha</label>
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+
                 </div>
 
                 <div class='justify-center'>
@@ -44,12 +48,13 @@
                 </div>
 
                 <p>Não tem uma conta?
-                    <a href=''>Cadastre-se</a>
+                    <a href='cadastro.html'>Cadastre-se</a>
                 </p>
 
             </div>
 
         </div>
+        <script src="./js/script.js"></script>
     </body>
 </header>
 

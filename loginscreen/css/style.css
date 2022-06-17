@@ -6,7 +6,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-/* LOGIN TELA */
+/* TELA LOGIN */
 
 #bg {
   background: url("../img/login_pet.png");
@@ -69,7 +69,7 @@ h1 {
 }
 
 .label-float label {
-  color: #fff;  
+  color: #fff;
   position: absolute;
   top: 0;
   left: 0;
@@ -77,7 +77,8 @@ h1 {
   transition: all 0.3s ease-out;
 }
 
-.label-float input:focus+label {
+.label-float input:focus+label,
+.label-float input:valid+label {
   font-size: 13px;
   margin-top: 0px;
   color: #ffc6c7;
@@ -119,16 +120,16 @@ p {
   text-align: center;
 }
 
-.log h2{
+.log h2 {
   font-size: 3em;
   font-family: 'Bree Serif', serif;
   color: #fff;
-  margin-bottom: .1em;  
+  margin-bottom: .1em;
 }
 
-/* CADASTRO TELA */
+/* TELA CADASTRO */
 
-body{
+body {
   background-color: #3237d2;
 }
 
@@ -194,7 +195,7 @@ h1 {
 }
 
 .label-cad label {
-  color: #fff;  
+  color: #fff;
   position: absolute;
   top: 0;
   left: 0;
@@ -202,7 +203,8 @@ h1 {
   transition: all 0.3s ease-out;
 }
 
-.label-cad input:focus+label {
+.label-cad input:focus+label,
+.label-cad input:valid+label {
   font-size: 13px;
   margin-top: 0px;
   color: #3237d2;
@@ -227,21 +229,29 @@ h1 {
   transition: all 0.5s ease-out;
 }
 
-.log-cad h2{
+.log-cad h2 {
   font-size: 3em;
   font-family: 'Bree Serif', serif;
   color: #fff;
-  margin-bottom: .1em; 
+  margin-bottom: .1em;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
 
 }
 
-.container .card{
+.container .card {
   margin-bottom: 10%;
+}
+
+.fa-eye{
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  color: #fff;
 }
 
 /*MOBILE*/
@@ -254,7 +264,7 @@ h1 {
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
   }
 
   #bg-cad {
@@ -264,7 +274,7 @@ h1 {
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
   }
 
 }
@@ -279,9 +289,9 @@ h1 {
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    justify-content: center;     
+    justify-content: center;
   }
-  
+
   #bg-cad {
     background-position: center;
     background-size: cover;
@@ -289,20 +299,20 @@ h1 {
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    justify-content: center;    
-  }
-  
-  .card{
-    margin-bottom: 5%;
-    
+    justify-content: center;
   }
 
-  .card-cad{
+  .card {
     margin-bottom: 5%;
-    
+
   }
-  
-  body{
+
+  .card-cad {
+    margin-bottom: 5%;
+
+  }
+
+  body {
     background-color: #e7d3c7;
   }
 }
