@@ -155,16 +155,23 @@ a:hover {
 }
 
 /* TABLET */
+
 @media (max-width: 758px) {
   #bg {
     background-position: center;
     background-size: cover;
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    height: 90vh;       
+    justify-content: center;     
   } 
-  .container .card{
-    margin-bottom: 20%;
+  .card{
+    margin-bottom: 10%;
+    
+  }
+  
+  body{
+    background-color: #e7d3c7;
   }
 }
