@@ -67,7 +67,7 @@ h1 {
 }
 
 .label-float label {
-  color: #fff;
+  color: #fff;  
   position: absolute;
   top: 0;
   left: 0;
@@ -136,7 +136,7 @@ a:hover {
 }
 
 .container .card{
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 
 /*MOBILE*/
@@ -166,7 +166,7 @@ a:hover {
     justify-content: center;     
   } 
   .card{
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     
   }
   
