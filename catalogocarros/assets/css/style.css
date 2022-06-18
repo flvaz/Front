@@ -1,0 +1,146 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap');
+
+/* Reseting css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Var */
+:root{
+    --first: #215CBB;
+    --monday: #EBE8E5;
+    --third: #252F60;
+    --txtfirst: #242323;
+    --txtmonday: #596172;
+    --txtthird: #8A8282;
+    --txtfourth: #fff;
+    --txtfifth: #252F60;
+}
+
+html, body{
+    width: 100%;
+    overflow-x: hidden ;
+}
+
+/* Header */
+header{
+    width: 100%;
+    height: 500px;
+    background: var(--first);
+}
+
+.content{
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+nav{
+    width: 100%;
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand{
+    font-size: 2em;
+    color: var(--txtfourth);
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;    
+    font-size: 1.2em;    
+}
+
+nav ul li{
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+nav ul li a{
+    color: var(--txtfourth);
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: var(--txtfifth)
+}
+
+nav ul button{
+    border: 1px solid var(--monday);
+    background: transparent;
+    padding: 8px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    color: var(--txtfourth);
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+nav ul button:hover{
+    background: var(--txtfifth);
+    transition: 0.9s;
+}
+
+.btn{
+    color: var(--txtfourth);
+    text-decoration: none;
+}
+
+.content .header-block{
+    max-width: 1000px;
+    min-width: 300px;
+    height: 450px;
+    background: var(--third);
+    border-radius: 8px;
+    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 10;
+    padding: 10px;
+}
+
+.header-block img{
+    width: 50%;
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+}
+
+.header-block .text h2{
+    color: var(--txtfourth);
+    margin-bottom: 20px;
+    text-align: right;
+    transform: translateX(-20px);
+    transition: transform 0.5s;
+
+}
+
+.header-block .text{
+    position: absolute;
+    color: var(--txtfourth);
+    bottom: 30%;
+    left: 15%;
+}
+
+.header-block .text p{
+    max-width: 280px;
+    color: var(--txtfourth);
+    text-align: right;
+    transform: translateX(-20px);
+    transition: transform 0.4s;
+}
